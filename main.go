@@ -90,6 +90,6 @@ func main() {
 	fmt.Println(email) // foo@bar.com
 	fmt.Println(email.String()) // foo@bar.com
 
-	fmt.Println(IsEmailVerified("thomas.rosenberg@ismailgul.net"))
+	fmt.Println(IsEmailVerified("abc@xyz.com"))
 }
 
