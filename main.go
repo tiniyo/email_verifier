@@ -9,8 +9,6 @@ import (
 	"encoding/json"
 )
 
-// https://www.ipqualityscore.com/api/json/email/token/abc@xyz.com
-
 type IpQualityScoreResponse struct {
 	TimedOut           bool   `json:"timed_out"`
 	Disposable         bool   `json:"disposable"`
@@ -90,6 +88,6 @@ func main() {
 	fmt.Println(email) // foo@bar.com
 	fmt.Println(email.String()) // foo@bar.com
 
-	fmt.Println(IsEmailVerified("abc@xyz.com"))
+	fmt.Println(IsEmailVerified("alice@example.com"))
 }
 
